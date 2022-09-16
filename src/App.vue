@@ -1,14 +1,16 @@
 <template>
   <nav>
     <h4 class="text-xl">
-      <Bars3Icon class="inline-block h-5 w-5 text-blue-500" />
-      menu (dans <code class="font-mono">/src/App.vue</code>)
-    </h4>
+      <Bars3Icon class="inline-block h-5 w-5 text-blue-500" /></h4>
     <ul>
       <li>
         <router-link class="text-red-600 underline" to="/">
-          lien vers
-          <code class="font-mono">/src/pages/index.vue</code>
+          <code class="font-mono">index.vue</code>
+        </router-link>
+      </li>
+      <li>
+        <router-link class="text-red-600 underline" to="simple">
+          <code class="font-mono">simple.vue</code>
         </router-link>
       </li>
     </ul>
