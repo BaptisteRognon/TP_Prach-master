@@ -1,16 +1,6 @@
-<template >
-     <div class="p-2">
-        <h2>Page simple</h2>
-        <Card v-for="unObjet of desObjets" v-bind="unObjet" :key="unObjet.nom"/>
-
-        <!--- <card v-bind="desObjets[0]"/>
-              card v-bind="desObjets[1]"/>-->
-     </div>
-  </template>
-
 <script setup lang="ts">
+import Card from "../components/card.vue";
     
-    import card from "../components/card.vue";
     
   const props = defineProps({
     foo:String
@@ -30,3 +20,13 @@
 ];
 
   </script>
+
+<template >
+  <div class="p-2">
+     <h2>Page simple</h2>
+     <Card v-for="unObjet of desObjets" v-bind="unObjet" :key="unObjet.nom"/>
+
+     <!--- <card v-bind="desObjets[0]"/>
+           card v-bind="desObjets[1]"/>-->
+  </div>
+</template>
