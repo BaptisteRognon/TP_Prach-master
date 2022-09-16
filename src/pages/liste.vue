@@ -1,7 +1,9 @@
 <template>
     <section>
-
-    </section>
+    <h1 class="text-2xl">
+Liste 
+    </h1>
+  </section>
 </template>
 
 <script setup lang="ts">

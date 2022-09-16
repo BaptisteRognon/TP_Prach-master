@@ -1,8 +1,7 @@
 <template>
   <section>
     <h1 class="text-2xl">
-      Bonjour<code class="font-mono text-base">/src/pages/index.vue</code>
-      
+Bienvenue sur le TP de l'année    
     </h1>
   </section>
 </template>
