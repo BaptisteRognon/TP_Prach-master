@@ -28,5 +28,5 @@
   image: "./une.jpg",
   nbrSDB: "number",}
 ];
-  
+
   </script>
