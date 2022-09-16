@@ -13,6 +13,11 @@
           <code class="font-mono">simple.vue</code>
         </router-link>
       </li>
+      <li>
+        <router-link class="text-red-600 underline" to="liste">
+          <code class="font-mono">liste.vue</code>
+        </router-link>
+      </li>
     </ul>
   </nav>
 
