@@ -9,7 +9,7 @@
   
 <template>
   <div>
-      <p>Liste</p>
+      <p>Liste (Fetch)</p>
      <Card v-for="m in Maisons" :key="m" v-bind="m"></Card>
   </div>
 </template>
