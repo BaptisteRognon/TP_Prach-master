@@ -1,11 +1,13 @@
-<template>
-    <section>
-    <h1 class="text-2xl">
-Liste 
-    </h1>
-  </section>
-</template>
-
 <script setup lang="ts">
-    const maisons = [ {/* Obj 1re maison */}, { /* Obj 2nd */ }, /* ... */ ];  
-</script >
+    import Card from "../components/card.vue";
+    import Maisons from "@/assets/maison.json";
+   
+</script>
+    
+    
+<template>
+    <div>
+        <p>Liste</p>
+       <Card v-for="m in Maisons" :key="m" v-bind="m"></Card>
+    </div>
+</template>
