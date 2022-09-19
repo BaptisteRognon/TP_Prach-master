@@ -7,38 +7,71 @@ import mcarre from "../assets/icones/mcarre.vue";
    
 
 defineProps({
-      name : {type: String, default:'Bathistalovalish'                                },
-      price: {type:Number, default:'2000'                                        },
-      adresse: {type: String, default: '03 lotissement le pré'          },
-      bed: {type:Number , default: 2                                           },
-      bathroom: {type:Number , default: 2                                       },
-      mcarre: {type:String , default: '6x7.5'                                    },
-      fav:{ type:Boolean, default:false},
+      name : {type: String, default:'Bathistalovalish'               },
+      price: {type:Number, default:'2000'                            },
+      adresse: {type: String, default: '03 lotissement le pré'       },
+      bed: {type:Number , default: 2                                 },
+      bathroom: {type:Number , default: 2                            },
+      mcarre: {type:String , default: '6x7.5'                        },
+      fav:{ type:Boolean, default:false                              },
       });
 
 </script>
 
 <template>
-  <figure>
-    <!-- Pour changer la valeur d'un attribut on utilise un "binding" :
-    https://vuejs.org/guide/essentials/template-syntax.html#attribute-bindings 
-    Ici on affecte à l'attribut 'src' la 'props' "image" -->
-    <img class="w-full h-48 object-cover" :src="image" alt="" />
-    <figcaption
-      class="relative flex flex-col border-2 border-t-0 border-indigo-100"
-    >
-      <!-- Pour changer une classe CSS en fonction d'un booléen : 
-      https://vuejs.org/guide/essentials/class-and-style.html#binding-html-classes -->
-      <heart :class="{ 'fill-red-300': favori }" />
+ <figure class="flex flex-col mt-12 mx-8 w-96">
+    <img src="@/assets/house2.png" alt="house" class="rounded-t-lg w-full h-48 object-cover"/>
+    
+    <figcaption class="
+        flex
+        w-full
+        flex-col
+        gap-4
+        rounded-b
+        border border-indigo-50
+        py-7
+        px-5">
 
-      <!-- Pour afficher du contenu textuel, simplement utiliser l'interpolation par double accolades (qui contiendront le JS dont l'interpretation donne le résultat affiché). -->
-      <div class="text-2xl font-bold text-indigo-500 pr-1">${{ prix }}</div>
+      <div class="flex justify-between">
+        <div class="w-2/5">
+          <div class="flex items-center">
+            <p class="text-2xl font-bold text-indigo-500"></p>
+            <span class="text-xs font-normal text-gray-900">{{price}} /month</span>
+          </div>
+          <p class="text-2xl font-bold">{{name}}</p>
+        </div>
+       
+        <div class="
+            flex
+            h-12
+            w-12
+            items-center
+            justify-center
+            rounded-full
+            border-2 border-indigo-100">
+          <HeartIcon class="h-6 stroke-indigo-500 text-transparent" :class="{'fill-red-500 stroke-red-800' :fav}"></HeartIcon>
+        </div>
+      </div>
 
-      <h3 class="text-2xl text-gray-900">{{ nom }}</h3>
+      <p class="text-base font-normal text-gray-900">{{adresse}}</p>
+      
+      <div class="w-full border border-indigo-50"></div>
+      
+      <div class="flex justify-between">
+        <div class="flex items-center gap-2">
+          <bed class="h-5 stroke-indigo-500"></bed>
+          <span class="text-xs text-gray-500">{{bed}} Lits</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <bath class="h-5 stroke-indigo-500"></bath>
+          <span class="text-xs text-gray-500">{{bathroom}} Chambre</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <mcarre class="h-5 stroke-indigo-500"></mcarre>
+          <span class="text-xs text-gray-500">{{mcarre}} m²</span>
+        </div>
+      </div>
 
-      <hr class="border-indigo-100 border-t-2 my-4" />
-
-      <div><bath class="inline-block pr-1" />{{ nbrSDB }} Bathrooms</div>
     </figcaption>
   </figure>
 </template>
