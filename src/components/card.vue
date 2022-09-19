@@ -6,14 +6,16 @@ import heart from "../assets/icones/heart.vue";
 import mcarre from "../assets/icones/mcarre.vue";
    
 
-  defineProps ({
-    nom: String,
-    prix: Number,
-    favori: Boolean,
-    image: String, // les images sont simplement l'URL absolue (depuis la racine, débute par '/' )
-    nbrSDB: Number,
-    });
-    
+defineProps({
+      name : {type: String, default:'Bathistalovalish'                                },
+      price: {type:Number, default:'2000'                                        },
+      adresse: {type: String, default: '03 lotissement le pré'          },
+      bed: {type:Number , default: 2                                           },
+      bathroom: {type:Number , default: 2                                       },
+      mcarre: {type:String , default: '6x7.5'                                    },
+      fav:{ type:Boolean, default:false},
+      });
+
 </script>
 
 <template>
