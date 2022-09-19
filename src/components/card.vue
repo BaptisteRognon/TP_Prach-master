@@ -1,7 +1,10 @@
 <script setup lang="ts">
+
+import bed from "../assets/icones/bed.vue";
 import bath from "../assets/icones/bath.vue";
 import heart from "../assets/icones/heart.vue";
-
+import mcarre from "../assets/icones/mcarre.vue";
+   
 
   defineProps ({
     nom: String,
@@ -10,6 +13,7 @@ import heart from "../assets/icones/heart.vue";
     image: String, // les images sont simplement l'URL absolue (depuis la racine, débute par '/' )
     nbrSDB: Number,
     });
+    
 </script>
 
 <template>
