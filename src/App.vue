@@ -10,32 +10,32 @@
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="simple">
+        <router-link class="text-red-600 underline" to="/simple">
           <code class="font-mono">/src/pages/simple.vue</code>
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="liste">
+        <router-link class="text-red-600 underline" to="/liste">
           <code class="font-mono">/src/pages/liste.vue</code>
         </router-link>
       </li>
         <li>
-        <router-link class="text-red-600 underline" to="liste">
+        <router-link class="text-red-600 underline" to="/liste-fetch">
           <code class="font-mono">/src/pages/liste-fetch.vue</code>
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="liste">
+        <router-link class="text-red-600 underline" to="nbr">
           <code class="font-mono">/src/offre/nbr.vue</code>
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="liste">
+        <router-link class="text-red-600 underline" to="nbr2">
           <code class="font-mono">/src/offre/nbr2.vue</code>
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="liste">
+        <router-link class="text-red-600 underline" to="new">
           <code class="font-mono">/src/pages/edit/new.vue</code>
         </router-link>
       </li>

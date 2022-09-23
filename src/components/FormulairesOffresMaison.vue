@@ -10,7 +10,7 @@
     <template>
         <div>
             <div class="p-2">
-                <h2 class="text-2xl">Résultat</h2>
+                <h2 class="text-2xl">Formulaire</h2>
                 <card v-bind="maison"/>
             </div>
             <div class="p-2">

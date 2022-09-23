@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import Maisons from '../../assets/Maisons.json'
+    import Maisons from '../../../public/maisons.json'
     import Card from '../../components/card.vue'
     
     defineProps({
