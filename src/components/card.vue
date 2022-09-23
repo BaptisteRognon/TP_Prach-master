@@ -1,9 +1,9 @@
 <script setup lang="ts">
 
-import bed from "../assets/icones/bed.vue";
-import bath from "../assets/icones/bath.vue";
-import heart from "../assets/icones/heart.vue";
-import mcarre from "../assets/icones/mcarre.vue";
+import Bed from "../assets/icones/bed.vue";
+import Bath from "../assets/icones/bath.vue";
+import Heart from "../assets/icones/heart.vue";
+import Mcarre from "../assets/icones/mcarre.vue";
    
 
 defineProps({
@@ -20,7 +20,7 @@ defineProps({
 
 <template>
  <figure class="flex flex-col mt-12 mx-8 w-96">
-    <img src="@/assets/house2.png" alt="house" class="rounded-t-lg w-full h-48 object-cover"/>
+    <img src="../../public/house2.png" alt="house" class="rounded-t-lg w-full h-48 object-cover"/>
     
     <figcaption class="
         flex
@@ -59,15 +59,15 @@ defineProps({
       
       <div class="flex justify-between">
         <div class="flex items-center gap-2">
-          <bed class="h-5 stroke-indigo-500"></bed>
+          <Bed class="h-5 stroke-indigo-500"></Bed>
           <span class="text-xs text-gray-500">{{bed}} Lits</span>
         </div>
         <div class="flex items-center gap-2">
-          <bath class="h-5 stroke-indigo-500"></bath>
+          <bath class="h-5 stroke-indigo-500"></Bath>
           <span class="text-xs text-gray-500">{{bathroom}} Chambre</span>
         </div>
         <div class="flex items-center gap-2">
-          <mcarre class="h-5 stroke-indigo-500"></mcarre>
+          <mcarre class="h-5 stroke-indigo-500"></Mcarre>
           <span class="text-xs text-gray-500">{{mcarre}} m²</span>
         </div>
       </div>
