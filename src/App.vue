@@ -48,8 +48,12 @@
   </nav>
 
   <!-- Affiche les pages -->
+  <Suspense>
       <router-view class="m-2 border-2 p-2" />
- 
+      <template #fallback>
+         Chargement ...
+      </template>
+  </Suspense>
 </template>
 
 <script setup lang="ts">
