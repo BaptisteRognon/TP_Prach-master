@@ -1,6 +1,7 @@
 <script setup lang="ts">
-    import { ref } from "@vue/reactivity";
+
     import card from "@/components/card.vue";
+import { ref } from "vue";
     
     const maison = ref({});
     
