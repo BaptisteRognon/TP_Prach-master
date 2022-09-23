@@ -5,8 +5,7 @@ import { ref } from "vue";
     
     const maison = ref({});
     
-</script>
-    
+</script> 
     
     <template>
         <div>
