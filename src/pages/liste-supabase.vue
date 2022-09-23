@@ -1,15 +1,16 @@
 <script setup lang="ts">
 
-  import Card from "@/components/card.vue";
-  const getMaisons = await fetch("./maisons.json")
-  const Maisons = await getMaisons.json()
+import Card from "@/components/card.vue";
+import { supabase } from "../supabase";
+console.log("supabase :", supabase); // pour vérifier et "garder" supabase dans le code
+const Maisons = []; // à remplacer par l'appel à Supabase
   
 </script>
       
   
 <template>
   <div>
-      <p>Liste (Fetch)</p>
+      <p>Liste (Supabase)</p>
      <Card v-for="m in Maisons" :key="m" v-bind="m"></Card>
   </div>
 </template>
