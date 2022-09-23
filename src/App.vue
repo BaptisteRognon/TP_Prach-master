@@ -6,37 +6,37 @@
     <ul>
       <li>
         <router-link class="text-red-600 underline" to="/">
-          <code class="font-mono">index.vue</code>
+          <code class="font-mono">/src/pages/index.vue</code>
         </router-link>
       </li>
       <li>
         <router-link class="text-red-600 underline" to="simple">
-          <code class="font-mono">simple.vue</code>
+          <code class="font-mono">/src/pages/simple.vue</code>
         </router-link>
       </li>
       <li>
         <router-link class="text-red-600 underline" to="liste">
-          <code class="font-mono">liste.vue</code>
+          <code class="font-mono">/src/pages/liste.vue</code>
         </router-link>
       </li>
         <li>
         <router-link class="text-red-600 underline" to="liste">
-          <code class="font-mono">liste-fetch.vue</code>
+          <code class="font-mono">/src/pages/liste-fetch.vue</code>
         </router-link>
       </li>
       <li>
         <router-link class="text-red-600 underline" to="liste">
-          <code class="font-mono">nbr</code>
+          <code class="font-mono">/src/offre/nbr.vue</code>
         </router-link>
       </li>
       <li>
         <router-link class="text-red-600 underline" to="liste">
-          <code class="font-mono">nbr2</code>
+          <code class="font-mono">/src/offre/nbr2.vue</code>
         </router-link>
       </li>
       <li>
         <router-link class="text-red-600 underline" to="liste">
-          <code class="font-mono">new.vue</code>
+          <code class="font-mono">/src/pages/edit/new.vue</code>
         </router-link>
       </li>
     </ul>

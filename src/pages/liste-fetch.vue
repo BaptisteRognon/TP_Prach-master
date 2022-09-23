@@ -1,9 +1,9 @@
 <script setup lang="ts">
-  import Card from "../components/card.vue";
-  
-  const getMaisons = await fetch("./maisons.json")
 
+  import Card from "@/components/card.vue";
+  const getMaisons = await fetch("./maisons.json")
   const Maisons = await getMaisons.json()
+  
 </script>
       
   

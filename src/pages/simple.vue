@@ -1,8 +1,6 @@
   <script setup lang="ts">
   import Card from "../components/card.vue";
-  
-  
-  
+   
     const unObjet = {
         price: "4800", 
         name: "YugiMuto",
