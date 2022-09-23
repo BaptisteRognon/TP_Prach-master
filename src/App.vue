@@ -25,17 +25,17 @@
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="nbr">
+        <router-link class="text-red-600 underline" to="/offre/1">
           <code class="font-mono">/src/offre/nbr.vue</code>
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="nbr2">
+        <router-link class="text-red-600 underline" to="/offre/2">
           <code class="font-mono">/src/offre/nbr2.vue</code>
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="new">
+        <router-link class="text-red-600 underline" to="/edit/new">
           <code class="font-mono">/src/pages/edit/new.vue</code>
         </router-link>
       </li>
