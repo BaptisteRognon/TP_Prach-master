@@ -6,7 +6,7 @@ console.log("supabase :", supabase); // pour vérifier et "garder" supabase dans
 const Maisons = []; // à remplacer par l'appel à Supabase
   
 
-let { data: Maison, error } = await supabase
+let { data, error } = await supabase
   .from('Maison')
   .select('*')
   
@@ -16,6 +16,6 @@ let { data: Maison, error } = await supabase
 <template>
   <div>
       <p>Liste (Supabase)</p>
-     <Card v-for="m in Maisons" :key="m" v-bind="m"></Card>
+     <Card v-for="m in data" :key="m" v-bind="m"></Card>
   </div>
 </template>

@@ -27,7 +27,7 @@ import { ref } from "vue";
                     <FormKit name="mcarre" label="m²" type="number"/>
                     <FormKit name="price" label="prix" type="number"/>
                     <FormKit name="fav" label="mettre en favoris" type="checkbox" wrapper-class="flex"/>
-
+                    
                 </FormKit>
             </div>
         </div>
