@@ -2,13 +2,31 @@
 
     import card from "@/components/card.vue";
 import { ref } from "vue";
+import { useRouter } from "vue-router";
+const router = useRouter();
     
     const maison = ref({});
+    const props = defineProps(["id"]);
+if (props.id) {
+ // On charge les données de la maison
+ let { data, error } = await supabase
+ .from("Maison")
+ .select("*")
+ .eq("id", props.id);
+ if (error) console.log("n'a pas pu charger le table Maison :", error);
+ else maison.value = (data as any[])[0];
+}
     
     async function upsertMaison(dataForm, node) {
  const { data, error } = await supabase.from("Maison").upsert(dataForm);
  if (error) node.setErrors([error.message])
+
+ else {
+ node.setErrors([]);
+ router.push({ name: "edit-id", params: { id: data[0].id } });
+ }
 }
+
 </script> 
     
     <template>

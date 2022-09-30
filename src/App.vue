@@ -43,6 +43,11 @@
           <code class="font-mono">/src/pages/liste-supabase</code>
         </router-link>
       </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/edit/id">
+          <code class="font-mono">/src/pages/edit/id</code>
+        </router-link>
+      </li>
       </li>
     </ul>
   </nav>
