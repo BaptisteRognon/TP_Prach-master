@@ -47,7 +47,7 @@
     </ul>
   </nav>
 
-  <!-- Affiche les pages -->
+  <!-- Affiche les pages -->npm 
   <Suspense>
       <router-view class="m-2 border-2 p-2" />
       <template #fallback>
