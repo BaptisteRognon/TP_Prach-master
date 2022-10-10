@@ -40,7 +40,7 @@
         </router-link>
         <li>
         <router-link class="text-red-600 underline" to="/liste-supabase">
-          <code class="font-mono">/src/pages/liste-supabase</code>
+          <code class="font-mono">/src/pages/liste-supabase</code>+
         </router-link>
       </li>
       <li>
@@ -48,11 +48,16 @@
           <code class="font-mono">/src/pages/edit/id</code>
         </router-link>
       </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/login-logout">
+          <code class="font-mono">/src/pages/login-logout</code>
+        </router-link>
+      </li>
       </li>
     </ul>
   </nav>
 
-  <!-- Affiche les pages -->npm 
+  <!-- Affiche les pages -->
   <Suspense>
       <router-view class="m-2 border-2 p-2" />
       <template #fallback>
